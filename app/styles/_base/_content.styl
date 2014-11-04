@@ -1,0 +1,70 @@
+.contenido
+	font-size 1.6rem
+	padding-top 5rem
+	padding-bottom 5rem
+	text-align center
+	
+.contenido__title
+	font-size 4rem
+	font-weight bold
+	text-transform uppercase
+	margin 0
+	
+	&:after, &:before
+		content "\2014"
+		
+	&:after
+		padding-left 20px
+		
+	&:before
+		padding-right 20px
+		
+.contenido__subtitle
+	font-size 2.8rem
+	margin-top 4rem
+		
+.contenido__content
+	margin-top 4.5rem
+	
+.contenido__content--bg
+	background-color blanco
+	
+.contenido__image
+	background-position center center
+	background-size 100% 100%
+	heigth 300px
+	width 290px	
+	
+.contenido__padding--top
+	padding-top 2rem
+	
+.contenido__padding--bottom
+	padding-bottom 2rem
+	
+.contenido__margin--top
+	margin-top 2rem
+	
+.contenido__margin--none-top
+	margin-top 0
+	
+
+@media screen and (max-width: 768px)
+	.contenido__title
+		font-size 2.5rem
+		
+	.contenido__subtitle
+		font-size 2rem
+		
+	.contenido__image
+		margin-top 3rem
+		
+	.contenido__subtitle--margin-top
+		margin-top 3rem
+	
+	.contenido_noticias--home
+		.contenido__content
+			margin-top 1rem
+			
+		.contenido__subtitle
+			margin-top 3rem
+			margin-bottom 0
