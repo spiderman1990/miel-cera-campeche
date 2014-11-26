@@ -7,21 +7,9 @@
 				<img class="header__logo-img" src="images/logo.png" alt="logo de miel y cera">
 			</a>
 			<nav class="pull-right header__nav">
-				<li>
-					<a href="">Inicio</a>
-				</li>
-				<li>
-					<a href="">¿Quienes somos</a>
-				</li>
-				<li>
-					<a href="">Productos</a>
-				</li>
-				<li>
-					<a href="">Noticias</a>
-				</li>
-				<li>
-					<a href="">Contactos</a>
-				</li>
+        <li ng-repeat="items in menuitems">
+          <a href="{{items.url}}" ng-click="select($index)" ng-class="{active : $index == active}">{{items.item}}</a>
+        </li>
 			</nav>
 		</div>
 	</div>

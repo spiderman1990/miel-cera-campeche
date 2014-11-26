@@ -15,6 +15,9 @@ module.exports = function (grunt) {
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -404,6 +407,8 @@ module.exports = function (grunt) {
     'connect:test',
     'karma'
   ]);
+
+  grunt.registerTask('default', [ 'concat', 'uglify']);
 
   grunt.registerTask('build', [
     'clean:dist',
