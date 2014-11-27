@@ -108,9 +108,7 @@ header
 	header
 		.header_inferior
 			height 20%
-			&:before
-				display none
-			
+					
 		.header__nav
 			background negro
 			font-weight bold
@@ -149,6 +147,39 @@ header
 		
 		
 		
+@media screen and (max-width 900px)
+	header
+		.header__nav
+			background negro			
+					
+			li
+				height 100%
+				width 100%
+				margin 0
+				display inline-block
+				text-align left
+				
+				
+				&:hover
+					background amarillo
+					text-decoration none
+		
+	.pull-right
+		width 100%
+		height 100%
+	
+	.header__logo-img
+		width 35%
+		height 40%
+		margin-left 20px
+		
+	.container
+		padding-right 0
+		padding-left 0	
+		
+	.header-bg
+		display none
+
 @media screen and (max-width 700px)
 	header
 		&:before
