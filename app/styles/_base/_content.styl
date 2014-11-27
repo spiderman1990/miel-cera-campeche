@@ -8,12 +8,14 @@ section
 	padding-top 5rem
 	padding-bottom 5rem
 	text-align center
+	position relative
 	
 .contenido__title
 	font-size 4rem
 	font-weight bold
 	text-transform uppercase
 	margin 0
+	margin-top 1rem
 	
 	&:after, &:before
 		content "\2014"
@@ -30,6 +32,7 @@ section
 		
 .contenido__content
 	margin-top 4.5rem
+	width 100%
 	
 .contenido__content--bg
 	background-color amarillo
@@ -51,25 +54,12 @@ section
 	
 .contenido__margin--none-top
 	margin-top 0
+
+.contenido__box
+		margin-bottom 3rem
 	
 
-// @media screen and (max-width: 768px)
-// 	.contenido__title
-// 		font-size 2.5rem
-		
-// 	.contenido__subtitle
-// 		font-size 2rem
-		
-// 	.contenido__image
-// 		margin-top 3rem
-		
-// 	.contenido__subtitle--margin-top
-// 		margin-top 3rem
-	
-// 	.contenido_noticias--home
-// 		.contenido__content
-// 			margin-top 1rem
-			
-// 		.contenido__subtitle
-// 			margin-top 3rem
-// 			margin-bottom 0
+@media screen and (max-width: 991px)
+
+	.contenido__box
+		margin-bottom 3rem

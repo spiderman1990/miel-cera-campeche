@@ -4,15 +4,17 @@
 	<div class="header_inferior">
 		<div class="container">
 			<a class="header__logo" href="/">
-				<img class="header__logo-img" src="images/logo.png" alt="logo de miel y cera">
+				<img class="header__logo-img" src="images/logo-de-miel-y-cera2.png" alt="logo de miel y cera">
 			</a>
 			<nav class="pull-right header__nav">
-        <li ng-repeat="items in menuitems">
-          <a href="{{items.url}}" ng-click="select($index)" ng-class="{active : $index == active}">{{items.item}}</a>
-        </li>
+		        <li ng-repeat="items in menuitems">
+		          <a href="{{items.url}}" ng-click="select($index)" ng-class="{active : $index == active}">{{items.item}}</a>
+		        </li>
 			</nav>
 		</div>
 	</div>
-	<h2 class="header__title">Endulzando la vida</h2>
+	<div class="container contenido">
+		<h2 class="header__title">"Endulzando la vida"</h2>
+	</div>
 	<div class="adorno_inferior"></div>
 </header>
